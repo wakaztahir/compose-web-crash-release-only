@@ -82,39 +82,6 @@ fun main() {
             }
         }
 
-        /**
-         * this doesn't work , not supposed to do this anyway
-         * "ClassCastException
-         *     at THROW_CCE (webpack-internal:///./kotlin/kotlin-kotlin-stdlib-js-ir.js:22868:11)
-         *     at DomApplier.insertTopDown_rvftcx_k$ (webpack-internal:///./kotlin/web-internal-web-core-runtime.js:83:96)
-         *     at eval (webpack-internal:///./kotlin/androidx-runtime.js:3477:19)
-         *     at eval (webpack-internal:///./kotlin/androidx-runtime.js:3901:13)
-         *     at applyChangesInLocked (webpack-internal:///./kotlin/androidx-runtime.js:6264:17)
-         *     at CompositionImpl.applyChanges_yo70f0_k$ (webpack-internal:///./kotlin/androidx-runtime.js:7356:9)
-         *     at Recomposer.composeInitial$composable_e2dr50_k$ (webpack-internal:///./kotlin/androidx-runtime.js:12463:19)
-         *     at CompositionImpl.setContent$composable_jlpbvd_k$ (webpack-internal:///./kotlin/androidx-runtime.js:7617:19)
-         *     at renderComposable$composable (webpack-internal:///./kotlin/web-internal-web-core-runtime.js:361:17)
-         *     at renderComposable$composable$default (webpack-internal:///./kotlin/web-internal-web-core-runtime.js:367:12)"
-         */
-//        val density = Density(1f, 1f)
-//        renderComposableInBody {
-//            CompositionLocalProvider(LocalDensity provides density) {
-//                CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Ltr) {
-//                    CompositionLocalProvider(LocalViewConfiguration provides DefaultViewConfiguration(density)) {
-//                        SketchableTheme {
-//                            Box(modifier = Modifier.fillMaxSize()) {
-//                                EditorScreen(
-//                                    onBack = {
-//                                        //do nothing
-//                                    }
-//                                )
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//        }
-
     }
 }
 
